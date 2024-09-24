@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builder Pattern</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p>Uma função que lê o nome, peso(kg), altura(cm) e sexo de uma pessoa</p>
+    <div id="box">
+        <span id="sem">
+            <h1>Sem Builder</h1>
+
+            <p>Escrever na ordem proposta</p>
+
+            <div id="inputs">
+                <input type="text" class="inputs">
+                <input type="text" class="inputs">
+                <input type="text" class="inputs">
+                <input type="text" class="inputs">
+            </div>
+            <button type="submit" id="enviar1">Enviar</button>
+
+            
+            <p class="result"></p>
+
+        </span>
+
+
+        <span id="com">
+            <h1>Com Builder</h1>
+
+            <p>Não há necessidade de lembrar a ordem proposta</p>
+
+            <div id="inputs">
+
+                <span class="comordem">
+                    <input type="text" class="inputs">
+                    <select class="select">
+                        <option value="nome">nome</option>
+                        <option value="sexo">sexo</option>
+                        <option value="peso">peso</option>
+                        <option value="altura">altura</option>
+                    </select>
+                </span>
+                <span class="comordem">
+
+                
+                    <input type="text" class="inputs">
+                    <select class="select">
+                        <option value="peso">peso</option>
+                        <option value="nome">nome</option>
+                        <option value="altura">altura</option>
+                        <option value="sexo">sexo</option>
+                    </select>
+                </span>
+
+                <span class="comordem">
+                    <input type="text" class="inputs">
+                    <select class="select">
+                        <option value="sexo">sexo</option>
+                        <option value="altura">altura</option>
+                        <option value="nome">nome</option>
+                        <option value="peso">peso</option>
+                    </select>
+                </span>
+
+                <span class="comordem">
+                    <input type="text" class="inputs">
+                    <select class="select">
+                        <option value="altura">altura</option>
+                        <option value="peso">peso</option>
+                        <option value="sexo">sexo</option>
+                        <option value="nome">nome</option>
+                    </select>
+                </span>
+                
+            </div>
+
+
+            <button type="submit" id="enviar2">Enviar</button>
+            <p class="result"></p>
+
+        </span>
+    </div>
+    
+</body>
+</html>
