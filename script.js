@@ -1,36 +1,4 @@
-/*function Pessoa(nome, peso, altura, sexo) {
-    this.nome = nome
-    this.peso = peso
-    this.altura = altura
-    this.sexo = sexo
-}
 
-function novaPessoa(nome, sexo) {
-    this.nome = nome
-    this.sexo = sexo
-
-    this.setAltura = function (altura) {
-        this.altura = altura
-        return this
-    }
-    this.setPeso = function (peso) {
-        this.peso = peso
-        return this
-    }
-
-    this.build = function() {
-        return new Pessoa(this.nome, this.peso, this.altura, this.sexo)
-
-    }
-
-}
-
-//const gustavo = new Pessoa('Gustavo', '76.7', '171', 'masculino')
-
-
-const gustavo = new novaPessoa('Gustavo', 'masculino').setAltura(170).setPeso(70).build()
-
-console.log(gustavo) */
 
 let select = document.getElementsByClassName("select") 
 let inputs = document.getElementsByClassName("inputs")
